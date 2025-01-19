@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>무작위 카카오톡 오픈채팅 링크</title>
+</head>
+<body>
+    <a href="#" onclick="redirectRandom(); return false;">무작위 카카오톡 오픈채팅 입장하기</a>
+
+    <script>
+    function redirectRandom() {
+        var links = [
+            'https://open.kakao.com/o/smCsKkDc',
+            'https://open.kakao.com/o/sABdbxsc',
+            'https://open.kakao.com/o/sj80k3Yc'
+        ];
+        var randomIndex = Math.floor(Math.random() * links.length);
+        window.location.href = links[randomIndex];
+    }
+    </script>
+</body>
+</html>
